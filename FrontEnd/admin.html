@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="adminscript.js"></script>
+
+</head>
+
+<body>
+    <div id="Loginid" style="display: block;">
+
+        <form name="adl">
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Emai1" name="Email" value="">
+
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Password" name="Password" value="">
+            </div>
+
+            <button id="subn" type="submit" class="btn btn-primary">Submit</button>
+            <div>
+                New User?<a href="./AdminRegister.html" class="btn btn-primary">Register</a>
+            </div>
+
+        </form>
+
+    </div>
+    <div id="UserId" style="display: none;">
+
+
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cake Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel UserName">User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="menudisplay" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" id="chartdis">Product</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link " aria-current="page" id="orderdis">Order</a>
+                            </li> -->
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="contshop" style="margin-top: 100px; display: none;">
+            <a class="btn btn-primary" id="contshopbtn" role="button">Add Product</a>
+        </div>
+        <div style="margin-top: 110px;">
+            <H3>Orders</H3>
+            <table id="Tables" class="table table-striped table-bordered ">
+
+
+            </table>
+        </div>
+
+
+        <!-- <div id="orderid" style="margin-top: 100px; display: none;">
+            <a class="btn btn-primary" id="contshopbtn" role="button">Order Now</a>
+        </div> -->
+
+    </div>
+
+    <div id="productAddForm" style="display: none;">
+        <form name="pdf">
+            <div class="mb-3">
+                <label for="Item" class="form-label">Item</label>
+                <input type="number" class="form-control" name="Item" value="" id="Item">
+
+            </div>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" value="" id="Name">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="Price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="Price" name="Price" value="">
+            </div>
+            <div class="mb-3">
+                <label for="Desc" class="form-label">Description</label>
+                <input type="textarea" class="form-control" id="" name="Desc" value="">
+
+            </div>
+
+            <button type="submit" id="addonsubmit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div id="productEditForm" style="display: none;">
+        <form name="pef">
+            <div class="mb-3">
+                <label for="Item" class="form-label">Item</label>
+                <input type="number" class="form-control" name="Item" value="" id="item">
+
+            </div>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" value="" id="name">
+
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="Email" value="">
+
+            </div>
+            <div class="mb-3">
+                <label for="Price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" name="Price" value="">
+            </div>
+            <div class="mb-3">S
+                <label for="Desc" class="form-label">Description</label>
+                <input type="textarea" class="form-control" id="desc" name="Desc" value="">
+
+            </div>
+
+            <button type="submit" id="editonsubmit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
